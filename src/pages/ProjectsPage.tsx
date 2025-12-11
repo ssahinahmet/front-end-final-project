@@ -14,6 +14,7 @@ export default function ProjectsPage() {
     if (projects) setLocalProjects(projects);
   }, [projects]);
 
+  //Create project Handler
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
     setCreating(true);

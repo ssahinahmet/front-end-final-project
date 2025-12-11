@@ -26,6 +26,7 @@ export default function ProjectDetail() {
   const [taskDesc, setTaskDesc] = useState("");
   const [creating, setCreating] = useState(false);
 
+  //Render projects
   useEffect(() => {
     let mounted = true;
     if (!projectId) return;
@@ -45,6 +46,7 @@ export default function ProjectDetail() {
     return () => { mounted = false; };
   }, [projectId]);
 
+  //Render tasks
   useEffect(() => {
     let mounted = true;
     if (!projectId) return;
@@ -66,6 +68,7 @@ export default function ProjectDetail() {
     return () => { mounted = false; };
   }, [projectId]);
 
+  //Save handler for project
   const handleProjectSave = async (payload: { name: string; description: string }) => {
     if (!projectId) return;
     const updated = await updateProject(projectId, payload);
@@ -75,6 +78,7 @@ export default function ProjectDetail() {
 
   const nav = useNavigate();
 
+//Delete handler for project
 const handleDeleteProject = async () => {
   if (!projectId) return;
 
@@ -89,6 +93,7 @@ const handleDeleteProject = async () => {
   }
 };
 
+//Create task handler
   const handleCreateTask = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!projectId) return;
@@ -110,6 +115,7 @@ const handleDeleteProject = async () => {
     }
   };
 
+  //Update handler for task
   const handleUpdateTask = async (id: string, payload: Partial<Task>) => {
     const updated = await updateTask(id, payload);
 
@@ -118,6 +124,7 @@ const handleDeleteProject = async () => {
     );
   };
 
+  //Delete handler for task
   const handleDeleteTask = async (id: string) => {
     await deleteTask(id);
 

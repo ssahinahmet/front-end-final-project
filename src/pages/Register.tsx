@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 export default function Register() {
   const nav = useNavigate();
 
+  //Submit Handler
   const handleSubmit = async ({ username, email, password }: any) => {
     await client.post("/users/register", { username, email, password });
     nav("/login");

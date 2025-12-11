@@ -10,6 +10,7 @@ export default function Login() {
   const auth = useAuth();
   const nav = useNavigate();
 
+  //Submit Handler
   const handleSubmit = async ({ email, password }: { email: string; password: string }) => {
     const res = await client.post("/users/login", { email, password });
     const { token, dbUser } = res.data;
