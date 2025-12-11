@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# TaskMaster
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskMaster is a full-stack project and task management application built with a modern JavaScript stack. It includes secure authentication, project and task CRUD operations, and a clean SPA frontend built with React and TypeScript.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+### User Authentication
+- Email/password registration and login  
+- JWT-based authentication with token persistence  
+- Protected routes on both client and server  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Project Management
+- Create, edit, and delete projects  
+- View all projects or open a single project's detail page  
+- Update project name and description
 
-## Expanding the ESLint configuration
+### Task Management
+- Add, edit, and delete tasks inside each project  
+- Task statuses include: `todo`, `in-progress`, and `done`  
+- Inline task editing and smooth UI updates without reloads  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Authorization & Security
+- Secure password hashing with bcrypt  
+- Role-based access for admin-only endpoints  
+- Middleware for token validation  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Deployment
+- Backend deployed on Render as a Web Service  
+- Frontend deployed on Render as a Static Site  
+- MongoDB Atlas used as the cloud database  
+- Environment variables configured for secure communication
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Frontend
+- React (Vite + TypeScript)
+- React Router
+- Axios
+- Tailwind CSS
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Backend
+- Node.js + Express
+- MongoDB Atlas + Mongoose
+- Passport.js (GitHub OAuth Strategy)
+- JSON Web Tokens (JWT)
+- bcrypt
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Hosting
+- Render (frontend + backend)
+- MongoDB Atlas
+
+---
+
+## Render Deployed Links:
+- Frontend: https://front-end-final-project.onrender.com
+- Backend: https://final-project-backend-fdvt.onrender.com
+
